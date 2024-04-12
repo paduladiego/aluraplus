@@ -78,6 +78,7 @@ h1 {
 
 .container__img {
     margin: 1.6rem 0 3.2rem 0;
+    width: 35rem;
 }
 
 .container__box {
@@ -173,4 +174,37 @@ footer a:hover{
     background-color: var(--cor-quatiary);
     color: var(--cor-secondary);
     border: 0.1rem solid var(--cor-tertiary);
+}
+@media screen and (max-width: 768px){
+    .container{
+        display: block;
+        background-size: 150vw;
+        background-position: right bottom;
+
+    }
+    .container__img{
+        width: 60vw;
+    }
+    .container__box, .secundario, .dispositivos__title, .rodape{
+        margin: 3.2rem;
+        text-align: center;
+    
+    }
+    .secundario__img{
+        width: 60vw;
+    }
+    .secundario__info {
+        padding: 1.6rem 0;
+    }
+    .container__btn3{
+        margin: 2rem 0 4rem 0;
+    }
+    .secundario__title{
+        margin: 2rem 0 0 0;
+    }
+    .dispositivos__list, .rodape__list{
+        display: block;
+        line-height: 150%;
+    }
+
 }
